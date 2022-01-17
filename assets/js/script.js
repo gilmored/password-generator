@@ -5,6 +5,35 @@ var numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
 var specialChar = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '[', ']', '{', '}', '|', '?', '/', '<', '>'];
 
 
+  
+
+  // user selects if they want lowercase letters
+  var lowerChar = window.confirm("Do you want to use lowercase characters?");
+  if (lowerChar) {
+    password += lowerCase;
+  };
+  
+  // user selects if they want uppercase letters
+  var upperChar = window.confirm("Do you want to use UPPERCASE characters?");
+  if (upperChar) {
+    password += upperCase;
+  };
+
+// user selects if they want numbers
+  var numbersChar = window.confirm("Do you want to use numbers?");
+  if (numbersChar) {
+    password += numbers;
+  };
+
+// user selects if they want special characters
+  var specialChar = window.confirm("Do you want to use special characters?");
+  if (specialChar) {
+    password += specialChar;
+  };
+
+
+
+
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
